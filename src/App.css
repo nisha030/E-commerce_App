@@ -1,0 +1,188 @@
+/* Moving Bubbles Animation */
+
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.4), rgba(147, 197, 253, 0.6), rgba(96, 165, 250, 0.3));
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(59, 130, 246, 0.2);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1);
+  animation: float-bubble 12s linear infinite;
+}
+
+.bubble-1 {
+  width: 60px;
+  height: 60px;
+  left: 10%;
+  animation-delay: 0s;
+  animation-duration: 15s;
+}
+
+.bubble-2 {
+  width: 80px;
+  height: 80px;
+  left: 20%;
+  animation-delay: 2s;
+  animation-duration: 18s;
+}
+
+.bubble-3 {
+  width: 40px;
+  height: 40px;
+  left: 30%;
+  animation-delay: 4s;
+  animation-duration: 12s;
+}
+
+.bubble-4 {
+  width: 100px;
+  height: 100px;
+  left: 40%;
+  animation-delay: 1s;
+  animation-duration: 20s;
+}
+
+.bubble-5 {
+  width: 70px;
+  height: 70px;
+  left: 50%;
+  animation-delay: 3s;
+  animation-duration: 16s;
+}
+
+.bubble-6 {
+  width: 50px;
+  height: 50px;
+  left: 60%;
+  animation-delay: 5s;
+  animation-duration: 14s;
+}
+
+.bubble-7 {
+  width: 90px;
+  height: 90px;
+  left: 70%;
+  animation-delay: 1.5s;
+  animation-duration: 17s;
+}
+
+.bubble-8 {
+  width: 35px;
+  height: 35px;
+  left: 80%;
+  animation-delay: 3.5s;
+  animation-duration: 13s;
+}
+
+.bubble-9 {
+  width: 75px;
+  height: 75px;
+  left: 90%;
+  animation-delay: 2.5s;
+  animation-duration: 19s;
+}
+
+.bubble-10 {
+  width: 55px;
+  height: 55px;
+  left: 5%;
+  animation-delay: 4.5s;
+  animation-duration: 11s;
+}
+
+@keyframes float-bubble {
+  0% {
+    transform: translateY(100vh) translateX(0px) scale(0.5);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(50vh) translateX(30px) scale(1.1);
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-20vh) translateX(-20px) scale(0.7);
+    opacity: 0;
+  }
+}
+
+/* Different movement patterns for variety */
+.bubble-1, .bubble-4, .bubble-7, .bubble-10 {
+  animation-name: float-bubble-left;
+}
+
+.bubble-2, .bubble-5, .bubble-8 {
+  animation-name: float-bubble-right;
+}
+
+.bubble-3, .bubble-6, .bubble-9 {
+  animation-name: float-bubble-center;
+}
+
+@keyframes float-bubble-left {
+  0% {
+    transform: translateY(100vh) translateX(-50px) scale(0.5);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(50vh) translateX(-30px) scale(1.1);
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-20vh) translateX(-70px) scale(0.7);
+    opacity: 0;
+  }
+}
+
+@keyframes float-bubble-right {
+  0% {
+    transform: translateY(100vh) translateX(50px) scale(0.5);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(50vh) translateX(30px) scale(1.1);
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-20vh) translateX(70px) scale(0.7);
+    opacity: 0;
+  }
+}
+
+@keyframes float-bubble-center {
+  0% {
+    transform: translateY(100vh) translateX(0px) scale(0.5);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(50vh) translateX(0px) scale(1.1);
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-20vh) translateX(0px) scale(0.7);
+    opacity: 0;
+  }
+}
