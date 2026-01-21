@@ -17,30 +17,30 @@ import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
-   <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] ">
-    <ToastContainer />
-    <Navbar />
-    <SearchBar />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/collection" element={<Collection />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/product/:id" element={<Product />} />
-      <Route path="/placeOrder" element={<PlaceOrder />} />
-      <Route path="/orders" element={<Orders />} />
-      <Route path="/order-tracking/:id" element={<OrderTracking />} />
-      <Route path="/review/:id" element={<Review />} />
-      <Route path="/cart" element={<Cart />} />
-      {/* <Route path="/product/:id" element={<Product />} />
-      <Route path="/collection/:id" element={<Collection />} />
-      <Route path="/about/:id" element={<About />} />
-      <Route path="/contact/:id" element={<Contact />} /> */}
-    </Routes>
-    <Footer/>
+   <div className="px-0">
+     <ToastContainer />
+     <Navbar />
+     <SearchBar />
+     <Routes>
+       <Route path="/" element={<Home />} />
+       <Route path="/collection" element={<Collection />} />
+       <Route path="/about" element={<About />} />
+       <Route path="/contact" element={<Contact />} />
+       <Route path="/login" element={<Login />} />
+       <Route path="/product/:id" element={<Product />} />
+       <Route path="/placeOrder" element={<PlaceOrder />} />
+       <Route path="/orders" element={<Orders />} />
+       <Route path="/order-tracking/:id" element={<OrderTracking />} />
+       <Route path="/review/:id" element={<Review />} />
+       <Route path="/cart" element={<Cart />} />
+       {/* <Route path="/product/:id" element={<Product />} />
+       <Route path="/collection/:id" element={<Collection />} />
+       <Route path="/about/:id" element={<About />} />
+       <Route path="/contact/:id" element={<Contact />} /> */}
+     </Routes>
+     <Footer/>
 
-   </div>
+    </div>
   )
 }
 

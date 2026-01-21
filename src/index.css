@@ -4,6 +4,11 @@
 
 *{
     font-family: outfit;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
 }
 
 .prata-regular {

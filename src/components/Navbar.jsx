@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <div className='sticky top-0 z-50 bg-white shadow-sm border-b border-gray-200'>
-      <div className='flex items-center justify-between py-5 px-4 max-w-7xl mx-auto'>
+      <div className='flex items-center justify-between py-5 px-4'>
       {/* Logo */}
       <div className="flex items-center">
         <img onClick={() => navigate('/')} src={assets.logo} alt="" className="w-36 cursor-pointer" />
@@ -114,7 +114,7 @@ const Navbar = () => {
       </div>
       {/* mobile screen sidebar */}
 
-          <div className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${isVisible ? 'w-full' : 'w-0'}`}>
+          <div className={`fixed top-0 left-0 bottom-0 overflow-hidden bg-white transition-all z-50 ${isVisible ? 'w-full' : 'w-0'}`}>
             <div className="flex flex-col text-gray-600">
               <div onClick={()=> setIsVisible(false)} className="flex item-center gap-4 p-3">
                 <img src={assets.dropdown_icon} alt="" className="h-4 rotate-180" />
