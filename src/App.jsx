@@ -8,6 +8,8 @@ import Login from "./pages/Login"
 import Product from "./pages/Product"
 import PlaceOrder from "./pages/PlaceOrder"
 import Orders from "./pages/Orders"
+import OrderTracking from "./pages/OrderTracking"
+import Review from "./pages/Review"
 import Cart from "./pages/Cart"
 import Footer from "./components/Footer"
 import SearchBar from "./components/SearchBar"
@@ -28,6 +30,8 @@ function App() {
       <Route path="/product/:id" element={<Product />} />
       <Route path="/placeOrder" element={<PlaceOrder />} />
       <Route path="/orders" element={<Orders />} />
+      <Route path="/order-tracking/:id" element={<OrderTracking />} />
+      <Route path="/review/:id" element={<Review />} />
       <Route path="/cart" element={<Cart />} />
       {/* <Route path="/product/:id" element={<Product />} />
       <Route path="/collection/:id" element={<Collection />} />
