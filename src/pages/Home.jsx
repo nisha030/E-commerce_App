@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../components/Header'
-import LatestCollection from '../components/latestCollection'
+import LatestCollection from '../components/LatestCollection'
 import BestSellers from '../components/BestSellers'
 import OurPolicy from '../components/OurPolicy'
 import NewsLetterBox from '../components/NewsLetterBox'
